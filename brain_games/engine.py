@@ -1,27 +1,31 @@
-import random
-
 import prompt
 
+import brain_games.games.calc
+import brain_games.games.even
 from brain_games.cli import welcome_and_get_user_name
 
 GAMES_COUNT = 3
-MAX_NUMBER = 20
 
 
-def is_even(number):
-    return number % 2 == 0
+def play_game(game_name):
+    match game_name:
+        case 'even':
+            game = brain_games.games.even
+        case 'calc':
+            game = brain_games.games.calc
+        case _:
+            print('Unknown game')
+            return
 
-
-def play_game():
     user_name = welcome_and_get_user_name()
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print(game.get_introduction())
 
     for _ in range(GAMES_COUNT):
-        number = random.randint(1, MAX_NUMBER)
-        print(f'Question: {number}')
+        question, correct_answer = game.get_round_task()
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
-        correct_answer = 'yes' if is_even(number) else 'no'
+
         if user_answer == correct_answer:
             print('Correct!')
         else:
