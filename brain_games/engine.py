@@ -3,6 +3,7 @@ import prompt
 import brain_games.games.calc
 import brain_games.games.even
 import brain_games.games.gcd
+import brain_games.games.progression
 from brain_games.cli import welcome_and_get_user_name
 
 GAMES_COUNT = 3
@@ -16,6 +17,8 @@ def play_game(game_name):
             game = brain_games.games.calc
         case 'gcd':
             game = brain_games.games.gcd
+        case 'progression':
+            game = brain_games.games.progression
         case _:
             print('Unknown game')
             return

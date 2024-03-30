@@ -11,3 +11,5 @@
 [![asciicast](https://asciinema.org/a/649751.svg)](https://asciinema.org/a/649751)
 ### Greatest common divisor
 [![asciicast](https://asciinema.org/a/649810.svg)](https://asciinema.org/a/649810)
+### Arithmetic progression
+[![asciicast](https://asciinema.org/a/649885.svg)](https://asciinema.org/a/649885)
