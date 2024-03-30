@@ -9,3 +9,5 @@
 [![asciicast](https://asciinema.org/a/UailWEfjn0Zn5ABfVNzkNrdLx.svg)](https://asciinema.org/a/UailWEfjn0Zn5ABfVNzkNrdLx)
 ### Calculator
 [![asciicast](https://asciinema.org/a/649751.svg)](https://asciinema.org/a/649751)
+### Greatest common divisor
+[![asciicast](https://asciinema.org/a/649810.svg)](https://asciinema.org/a/649810)
