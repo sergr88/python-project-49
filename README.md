@@ -6,7 +6,7 @@
 
 # Games
 ### Parity Check
-[![asciicast](https://asciinema.org/a/UailWEfjn0Zn5ABfVNzkNrdLx.svg)](https://asciinema.org/a/UailWEfjn0Zn5ABfVNzkNrdLx)
+[![asciicast](https://asciinema.org/a/649118.svg)](https://asciinema.org/a/649118)
 ### Calculator
 [![asciicast](https://asciinema.org/a/649751.svg)](https://asciinema.org/a/649751)
 ### Greatest common divisor
