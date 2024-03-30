@@ -12,6 +12,9 @@ def is_even(number):
 
 
 def get_round_task():
-    question = random.randint(1, MAX_NUMBER)
-    answer = 'yes' if is_even(question) else 'no'
+    number = random.randint(1, MAX_NUMBER)
+
+    question = str(number)
+    answer = 'yes' if is_even(number) else 'no'
+
     return question, answer

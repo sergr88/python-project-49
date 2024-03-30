@@ -8,18 +8,25 @@ def get_introduction():
     return 'What is the result of the expression?'
 
 
-def get_round_task():
-    first_operand = random.randint(1, MAX_NUMBER)
-    second_operand = random.randint(1, MAX_NUMBER)
-    operator = random.choice(OPERATORS)
-    question = f'{first_operand} {operator} {second_operand}'
+def calculate(operand_1, operand_2, operator):
     match operator:
         case '+':
-            answer = first_operand + second_operand
+            return operand_1 + operand_2
         case '-':
-            answer = first_operand - second_operand
+            return operand_1 - operand_2
         case '*':
-            answer = first_operand * second_operand
-        case _:
-            answer = 'Unknown operator'
-    return question, str(answer)
+            return operand_1 * operand_2
+    return 'Unknown operator'
+
+
+def get_round_task():
+    operand_1 = random.randint(1, MAX_NUMBER)
+    operand_2 = random.randint(1, MAX_NUMBER)
+    if operand_2 > operand_1:
+        operand_1, operand_2 = operand_2, operand_1
+    operator = random.choice(OPERATORS)
+
+    question = f'{operand_1} {operator} {operand_2}'
+    answer = str(calculate(operand_1, operand_2, operator))
+
+    return question, answer
