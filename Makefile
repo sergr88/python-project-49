@@ -1,17 +1,14 @@
 install:
-	poetry install
+	uv sync
 
 lint:
-	poetry run flake8 brain_games
+	uv run ruff check brain_games
 
 brain-games:
-	poetry run brain-games
+	uv run brain-games
 
 build:
-	poetry build
-
-publish:
-	poetry publish --dry-run
+	uv build
 
 package-install:
-	python3 -m pip install --user dist/*.whl
+	uv tool install dist/*.whl
