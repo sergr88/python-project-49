@@ -11,8 +11,10 @@ def get_introduction():
 
 def is_prime(number):
     square_root = math.sqrt(number)
-    return all(number % divisor != 0
-               for divisor in range(2, math.floor(square_root) + 1))
+    return all(
+        number % divisor != 0
+        for divisor in range(2, math.floor(square_root) + 1)
+    )
 
 
 def get_round_task():

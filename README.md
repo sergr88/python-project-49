@@ -15,3 +15,29 @@
 [![asciicast](https://asciinema.org/a/649885.svg)](https://asciinema.org/a/649885)
 ### Prime number
 [![asciicast](https://asciinema.org/a/649888.svg)](https://asciinema.org/a/649888)
+
+## Команды
+#### Развертывание
+```shell
+make install
+```
+#### Сборка пакета
+```shell
+make build
+```
+#### Установка пакета
+```shell
+make package-install
+```
+#### Проверка линтером
+```shell
+make lint
+```
+#### Автоисправление линтером
+```shell
+make lint-fix
+```
+#### Форматирование кода
+```shell
+make format
+```

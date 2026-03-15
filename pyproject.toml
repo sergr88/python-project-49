@@ -49,6 +49,7 @@ extend-select = [
     "PL", # Pylint
     "N", # pep8-naming
 ]
+ignore = ["COM812"] # Конфликт с ruff format
 preview = true
 
 [tool.ruff.lint.pydocstyle]
@@ -56,3 +57,6 @@ convention = "google"
 
 [tool.ruff.lint.flake8-quotes]
 inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"
