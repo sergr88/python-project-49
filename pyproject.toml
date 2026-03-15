@@ -1,7 +1,7 @@
 [project]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Проект: Игры разума (Python)"
 authors = [
     { name = "Sergey Knyazkov", email = "serg.r88@gmail.com" }
 ]
